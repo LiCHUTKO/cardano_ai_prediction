@@ -48,7 +48,7 @@ scaler = RobustScaler()
 data[features] = scaler.fit_transform(data[features])
 
 # Set sequence 31 days
-seq_length = 31 * 24  # 31 days * 24 hours
+seq_length = 14 * 24  # 31 days * 24 hours
 X, y = create_sequences(data[features], seq_length)
 
 # Split data into training and testing sets
