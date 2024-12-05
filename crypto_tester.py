@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import RobustScaler
-from tensorflow.keras.models import load_model
+from tensorflow.keras.models import load_model #type: ignore
 from datetime import datetime, timedelta
 
 def create_sequences(data, seq_length):
